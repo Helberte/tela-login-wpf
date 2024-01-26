@@ -10,6 +10,10 @@
 
   <ItemGroup>
     <None Remove="Images\back_image.jpg" />
+    <None Remove="Images\icone-usuario.png" />
+    <None Remove="Images\key-icon.png" />
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\user-icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +23,9 @@
 
   <ItemGroup>
     <Resource Include="Images\back_image.jpg" />
+    <Resource Include="Images\icone-usuario.png" />
+    <Resource Include="Images\key-icon.png" />
+    <Resource Include="Images\Logo.png" />
   </ItemGroup>
 
 </Project>
