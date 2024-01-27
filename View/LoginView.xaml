@@ -96,6 +96,7 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+                    
                     <Button
                         x:Name="btnClose"
                         Grid.Column="2"

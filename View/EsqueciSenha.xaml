@@ -39,13 +39,16 @@
                 </LinearGradientBrush>
             </Border.Background>
 
-            <Grid>
+            <Grid ShowGridLines="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <Grid Grid.Row="0" Grid.Column="0">
+                <Grid
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    ShowGridLines="True">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
                         <ColumnDefinition Width="auto" />
@@ -64,32 +67,104 @@
                         Text="Faça o seu Cadastro" />
 
                     <Button
+                        x:Name="btnEsqueciSenhaMinizar"
                         Grid.Row="0"
                         Grid.Column="1"
                         Width="20"
                         Margin="3"
-                        Background="BlueViolet"
                         BorderThickness="0"
                         Content="-"
                         Cursor="Hand"
+                        FontFamily="Montserrat"
                         FontSize="16"
-                        Foreground="White" />
-
+                        Foreground="White">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="BlueViolet" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#A036FF" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border
+                                    Width="18"
+                                    Height="18"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="9">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                     <Button
                         Grid.Row="0"
-                        Grid.Column="1"
+                        Grid.Column="2"
                         Width="20"
                         Margin="3"
-                        Background="BlueViolet"
                         BorderThickness="0"
-                        Content="-"
+                        Content="x"
                         Cursor="Hand"
+                        FontFamily="Montserrat"
                         FontSize="16"
-                        Foreground="White" />
+                        Foreground="White">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#da34ae" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF4FDA" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border
+                                    Width="18"
+                                    Height="18"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="9">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="1.3*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Panel.ZIndex="1"
+                        Width="auto"
+                        Height="250"
+                        Stretch="UniformToFill">
+                        <Image.Source>
+                            <BitmapImage DecodePixelWidth="600" UriSource="/Images/machine-larning.png" />
+                        </Image.Source>
+                    </Image>
+
+                    <Grid Grid.Row="0"
+                          Grid.Column="0">
+                        <Grid.Style>
+                            <Style TargetType="Grid">
+                                <Setter Property="Background" Value="#141035"/>                                
+                            </Style>
+                        </Grid.Style>
+                    </Grid>
 
                 </Grid>
             </Grid>
-
         </Border>
     </Border>
 </Window>
