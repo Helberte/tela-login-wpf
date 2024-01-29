@@ -154,15 +154,12 @@
                         </Image.Source>
                     </Image>
 
-                    <Grid Grid.Row="0"
-                          Grid.Column="0">
-                        <Grid.Style>
-                            <Style TargetType="Grid">
-                                <Setter Property="Background" Value="#141035"/>                                
-                            </Style>
-                        </Grid.Style>
-                    </Grid>
-
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="1"
+                                Orientation="Vertical"
+                                HorizontalAlignment="Center">
+                        
+                    </StackPanel>                    
                 </Grid>
             </Grid>
         </Border>
