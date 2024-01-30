@@ -158,7 +158,44 @@
                                 Grid.Column="1"
                                 Orientation="Vertical"
                                 HorizontalAlignment="Center">
+
+                        <Border x:Name="borderNomeUser" Margin="0 20 0 0">
+                            <Border.BorderBrush>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Offset="-0.10" Color="#6951C9"/>
+                                    <GradientStop Offset="0.50" Color="#7B5FEB"/>
+                                    <GradientStop Offset="1.1" Color="#8567FF"/>
+                                </LinearGradientBrush>
+                            </Border.BorderBrush>
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="3"/>
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BorderThickness" Value="2"/>
+                                            <Setter Property="BorderBrush" Value="#A592FF"/>
+                                        </Trigger>                                      
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            
+                            <TextBox Width="250"
+                                 Height="30"
+                                 CaretBrush="White"
+                                 Background="Transparent"
+                                 Text="Nome de Usuário"
+                                 Foreground="White"
+                                 VerticalContentAlignment="Center"
+                                 Padding="3,0,3,0"
+                                 MaxLength="70"
+                                 FontSize="13"
+                                 FontFamily="Montserrat"
+                                 Focusable="True"
+                                 BorderThickness="0"/>
+                        </Border>
                         
+
                     </StackPanel>                    
                 </Grid>
             </Grid>
