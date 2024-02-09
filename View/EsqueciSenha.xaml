@@ -175,11 +175,11 @@
                                         <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="BorderThickness" Value="2"/>
                                             <Setter Property="BorderBrush" Value="#A592FF"/>
-                                        </Trigger>                                      
+                                        </Trigger>
                                     </Style.Triggers>
                                 </Style>
                             </Border.Style>
-                            
+
                             <TextBox Width="250"
                                  Height="30"
                                  CaretBrush="White"
@@ -194,9 +194,41 @@
                                  Focusable="True"
                                  BorderThickness="0"/>
                         </Border>
-                        
 
-                    </StackPanel>                    
+                        <Button
+                            BorderThickness="0"
+                            Content="Clique aqui"
+                            Cursor="Hand"
+                            FontFamily="Montserrat"
+                            FontSize="12"
+                            Foreground="White"
+                            Margin="0,50,0,0">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#462ad8" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#28aeed" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border
+                                        Width="150"
+                                        Height="40"
+                                        Background="{TemplateBinding Background}"
+                                        CornerRadius="20">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        <Border.Effect>
+                                            <DropShadowEffect Opacity="0.35"/>
+                                        </Border.Effect>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
                 </Grid>
             </Grid>
         </Border>
