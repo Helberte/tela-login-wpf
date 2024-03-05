@@ -4,9 +4,48 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppEstudoPromise.View"
+        xmlns:viewModel="clr-namespace:AppEstudoPromise.ViewModel"
         mc:Ignorable="d"
-        Title="UIDesign" Height="450" Width="800">
-    <Grid>
+        Title="UIDesign" Height="450" Width="800"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="true">
+
+    <Window.DataContext>
+        <viewModel:UIDesignViewModel/>
+    </Window.DataContext>
+
+    <Border CornerRadius="10"
+            BorderThickness="1" >
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="{StaticResource winBorderColor1}" Offset="0"/>
+                <GradientStop Color="{StaticResource winBorderColor2}" Offset="0.75"/>
+                <GradientStop Color="{StaticResource winBorderColor3}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <!--menu de navegação-->
+                <ColumnDefinition Width="250"/>
+                
+                <!--seção de conteúdo--> 
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border 
+                CornerRadius="10 0 0 10"
+                Grid.Column="0">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="{StaticResource secondaryBackColor1}"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+        </Grid>
+
         
-    </Grid>
+        
+    </Border>
 </Window>
