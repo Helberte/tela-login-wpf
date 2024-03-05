@@ -5,8 +5,7 @@
     xmlns:local="clr-namespace:AppEstudoPromise"
     StartupUri="View/LoginView.xaml">
 
-    <Application.Resources >
-        
-        
+    <Application.Resources>
+        <ResourceDictionary Source="/Styles/UIColors.xaml" />
     </Application.Resources>
 </Application>
