@@ -68,7 +68,8 @@ namespace AppEstudoPromise.View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            UIDesign design = new UIDesign();
+            design.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
