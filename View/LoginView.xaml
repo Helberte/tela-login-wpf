@@ -15,6 +15,7 @@
     ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
+    PreviewKeyDown="Window_PreviewKeyDown"
     mc:Ignorable="d">
     <Border PresentationOptions:Freeze="true" CornerRadius="12">
         <Border.Background>
