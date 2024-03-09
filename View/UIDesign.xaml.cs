@@ -24,10 +24,15 @@ namespace AppEstudoPromise.View
             InitializeComponent();
         }
 
+        /// <summary>
+        /// pressionamento de qualquer tecla do teclado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Escape)            
-                Application.Current.Shutdown();            
+            if(e.Key == Key.Escape)
+                Application.Current.Shutdown();
         }
     }
 }
