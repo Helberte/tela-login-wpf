@@ -138,71 +138,73 @@
 
                 <Grid Grid.Row="1" Grid.Column="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition />
                         <ColumnDefinition Width="1.3*" />
                     </Grid.ColumnDefinitions>
 
                     <Image
                         Grid.Row="0"
                         Grid.Column="0"
-                        Panel.ZIndex="1"
                         Width="auto"
                         Height="250"
+                        Panel.ZIndex="1"
                         Stretch="UniformToFill">
                         <Image.Source>
                             <BitmapImage DecodePixelWidth="600" UriSource="/Images/machine-larning.png" />
                         </Image.Source>
                     </Image>
 
-                    <StackPanel Grid.Row="0"
-                                Grid.Column="1"
-                                Orientation="Vertical"
-                                HorizontalAlignment="Center">
+                    <StackPanel
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        Orientation="Vertical">
 
-                        <Border x:Name="borderNomeUser" Margin="0 20 0 0">
+                        <Border x:Name="borderNomeUser" Margin="0,20,0,0">
                             <Border.BorderBrush>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                    <GradientStop Offset="-0.10" Color="#6951C9"/>
-                                    <GradientStop Offset="0.50" Color="#7B5FEB"/>
-                                    <GradientStop Offset="1.1" Color="#8567FF"/>
+                                    <GradientStop Offset="-0.10" Color="#6951C9" />
+                                    <GradientStop Offset="0.50" Color="#7B5FEB" />
+                                    <GradientStop Offset="1.1" Color="#8567FF" />
                                 </LinearGradientBrush>
                             </Border.BorderBrush>
                             <Border.Style>
                                 <Style TargetType="Border">
-                                    <Setter Property="CornerRadius" Value="3"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="CornerRadius" Value="3" />
+                                    <Setter Property="BorderThickness" Value="1" />
                                     <Style.Triggers>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="BorderThickness" Value="2"/>
-                                            <Setter Property="BorderBrush" Value="#A592FF"/>
+                                            <Setter Property="BorderThickness" Value="2" />
+                                            <Setter Property="BorderBrush" Value="#A592FF" />
                                         </Trigger>
                                     </Style.Triggers>
                                 </Style>
                             </Border.Style>
 
-                            <TextBox Width="250"
-                                 Height="30"
-                                 CaretBrush="White"
-                                 Background="Transparent"
-                                 Text="Nome de Usuário"
-                                 Foreground="White"
-                                 VerticalContentAlignment="Center"
-                                 Padding="3,0,3,0"
-                                 MaxLength="70"
-                                 FontSize="13"
-                                 FontFamily="Montserrat"
-                                 Focusable="True"
-                                 BorderThickness="0"/>
+                            <TextBox
+                                Width="250"
+                                Height="30"
+                                Padding="3,0,3,0"
+                                VerticalContentAlignment="Center"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                CaretBrush="White"
+                                Focusable="True"
+                                FontFamily="Montserrat"
+                                FontSize="13"
+                                Foreground="White"
+                                MaxLength="70"
+                                Text="Nome de Usuário" />
                         </Border>
 
                         <Button
+                            Margin="0,50,0,0"
                             BorderThickness="0"
                             Content="Clique aqui"
                             Cursor="Hand"
                             FontFamily="Montserrat"
                             FontSize="12"
-                            Foreground="White"
-                            Margin="0,50,0,0">
+                            Foreground="White">
                             <Button.Style>
                                 <Style TargetType="Button">
                                     <Setter Property="Background" Value="#462ad8" />
@@ -222,7 +224,7 @@
                                         CornerRadius="20">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                         <Border.Effect>
-                                            <DropShadowEffect Opacity="0.35"/>
+                                            <DropShadowEffect Opacity="0.35" />
                                         </Border.Effect>
                                     </Border>
                                 </ControlTemplate>

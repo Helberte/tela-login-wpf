@@ -45,6 +45,23 @@
                         <GradientStop Offset="1" Color="{StaticResource secondaryBackColor2}" />
                     </LinearGradientBrush>
                 </Border.Background>
+
+                <StackPanel>
+                    <StackPanel
+                        Height="35"
+                        Margin="15,25,0,40"
+                        Orientation="Horizontal">
+                        <Image Height="30" Source="/Images/Logo.png" />
+                        <TextBlock
+                            Margin="15,0,0,0"
+                            VerticalAlignment="Center"
+                            FontFamily="Montserrat"
+                            FontSize="20"
+                            Foreground="{StaticResource titleColor2}"
+                            Text="HBT Code"
+                            FontWeight="Medium"/>
+                    </StackPanel>
+                </StackPanel>
             </Border>
 
             <!--  Sessão Mãe  -->
