@@ -57,10 +57,14 @@
                             VerticalAlignment="Center"
                             FontFamily="Montserrat"
                             FontSize="20"
+                            FontWeight="Medium"
                             Foreground="{StaticResource titleColor2}"
-                            Text="HBT Code"
-                            FontWeight="Medium"/>
+                            Text="HBT Code" />
                     </StackPanel>
+
+                    <!--  Menu Buttons  -->
+                    
+
                 </StackPanel>
             </Border>
 
