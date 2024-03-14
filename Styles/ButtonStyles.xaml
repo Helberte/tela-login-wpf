@@ -22,6 +22,7 @@
 
         <Style.Triggers>
 
+            <!--  Será ativado quando o ponteiro do mouse passar pelo botão  -->
             <!--  mouse over  -->
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Margin" Value="0,0,0,5" />
@@ -30,6 +31,7 @@
                 <Setter Property="BorderBrush" Value="{Binding Path=Tag, RelativeSource={RelativeSource Self}}" />
             </Trigger>
 
+            <!--  Será ativado quando o botão for checado  -->
             <!--  active button back color  -->
             <Trigger Property="IsChecked" Value="True">
                 <Setter Property="Margin" Value="0,0,0,5" />
