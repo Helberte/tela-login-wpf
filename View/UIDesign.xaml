@@ -46,6 +46,7 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
+                <!--  side bar  -->
                 <StackPanel>
                     <StackPanel
                         Height="35"
@@ -63,7 +64,7 @@
                     </StackPanel>
 
                     <!--  Menu Buttons  -->
-                    
+
 
                 </StackPanel>
             </Border>
