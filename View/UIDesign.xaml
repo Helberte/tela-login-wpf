@@ -63,13 +63,9 @@
                             Text="HBT Code" />
                     </StackPanel>
 
-                    <!--  Menu Buttons  -->
-
-
                 </StackPanel>
             </Border>
 
-            <!--  Sessão Mãe  -->
             <Border Grid.Column="1" CornerRadius="0 10 10 0">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
