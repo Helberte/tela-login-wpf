@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\back_image.jpg" />
     <Resource Include="Images\icone-usuario.png" />
     <Resource Include="Images\key-icon.png" />
